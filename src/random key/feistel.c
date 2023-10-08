@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 void bintochar(const char *binaryString) {
     int num = strtol(binaryString, NULL, 2); 
