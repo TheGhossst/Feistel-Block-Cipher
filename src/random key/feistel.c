@@ -90,7 +90,9 @@ int main() {
         return 1;
     }
 
-    char key[] = "10011010";
+    //char key[] = "10011010";
+    char *key = generateRandomKey(); 
+    printf("Random Key: %s\n", key);
     int blocksize = 8;
 
     printf("Plain Text Block\tCipher Text Block\tChar\n");
