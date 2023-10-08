@@ -68,12 +68,12 @@ void feistelCipher(char *block, int blocksize, char *key) {
 }
 
 char* generateRandomKey() {
-    char* key = (char*)malloc(9 * sizeof(char)); // 8 bits + null terminator
-    srand(time(NULL)); // Seed the random number generator with current time
+    char* key = (char*)malloc(9 * sizeof(char)); 
+    srand(time(NULL)); 
     for (int i = 0; i < 8; ++i) {
-        key[i] = (rand() % 2) + '0'; // Generate random '0' or '1'
+        key[i] = (rand() % 2) + '0'; 
     }
-    key[8] = '\0'; // Null-terminate the key
+    key[8] = '\0';
     return key;
 }
 
