@@ -89,8 +89,6 @@ int main() {
         printf("Error opening file.\n");
         return 1;
     }
-
-    //char key[] = "10011010";
     char *key = generateRandomKey(); 
     printf("Random Key: %s\n", key);
     int blocksize = 8;
